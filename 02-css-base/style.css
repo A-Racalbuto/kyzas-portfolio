@@ -1,0 +1,17 @@
+/* @import url("theme.css"); mit dem Befehl würde man das theme.css in dieses style.css integrieren*/
+
+h1 {
+    color: cornflowerblue;
+    /* man kann auch in anderen Formaten schreiben, z.B. in Hexadezimal "#9ACA42" (die Raute indiziert, dass eine Zahl folgt) oder "RGB(182, 42, 68)" oder "hsla(109, 100%, 52%, 1)" oder "hsl(109, 100%, 52%)" schreiben */
+    font-family: "Times New Roman"; 
+    /* Wegen den Leerzeichen besser mit Anführungszeichen schreiben, kann man sonst ohne schreiben */
+    font-size: 110px;
+    font-weight: normal;
+    /* Normal ist dünn und nicht fett; kann auch als Zahl definiert werden (~400 ist normal) */
+
+
+}
+
+body{
+    background: palegreen;
+}
