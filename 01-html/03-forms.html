@@ -8,20 +8,64 @@
 <body>
     <h1>Forms</h1>
 
-    <form>
-        <label>Username</label>
-        <br>
-        <input placeholder="e.g. type SuperMarioFan">
-        <br>
-        <br>
+    <form> <!--Attribut "method = POST" würde die Anmeldedaten in der URL unterdrücken-->
+        <fieldset>
+            <legend>Sign In</legend>
+            
+            <div>
+                <label>Username</label>
+                <br>
+                <input name="username" placeholder="e.g. type SuperMarioFan" value="Dummy">
+            </div>
+            
+            <div>
+                <label>Password</label> 
+                <br>
+                <input name="password" placeholder="e.g. type 12345" type="password" required>
+            </div>
 
-        <label>Password</label> 
-        <br>
-        <input placeholder="e.g. type 12345" type="password">
-        <br>
-        <br>
+            <div>
+                <input type="checkbox" name="preferences" value="pizza" id="pizza" checked/>
+                <label for="pizza">Pizza</label>
 
-        <button type="submit">Login</button>
+                <input type="checkbox" name="preference" value="pasta" id="pasta" />
+                <label for="pasta">Pasta</label>
+
+                <input type="checkbox" name="preferences" value="mandolin" id="mandolin"/>
+                <label for="mandolin">Mandolin</label>
+            </div>
+
+            <div>
+                <input type="radio" name="gender" value="female" id="female"/>
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender" value="male" id="male"/>
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" value="apache-helicopter" id="apache-helicopter"/>
+                <label for="apache-helicopter">Apache-Helicopter</label>
+
+                <input type="radio" name="gender" value="I don't care" id="I don't care" checked/>
+                <label for="I don't care">I don't care</label>
+            </div>
+
+            <div>
+                <label for="languages">Languages I
+                    <span>know</span>
+                    :</label>
+                <br>
+                <select name="languages" id="languages">
+                    <option value="html">HyperText Markup Languages (HTML)</option>
+                    <option value="css">Cascading StyleSheets (CSS)</option>
+                    <option values="js">JavaScript (JS)</option>
+                </select>
+            </div>
+            <br>
+
+            <button type="submit">Login</button>
+        </fieldset>
     </form>
+
+
 </body>
 </html>
