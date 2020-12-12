@@ -15,3 +15,48 @@ h1 {
 body{
     background: palegreen;
 }
+
+p{
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+strong{
+    font-weight: normal;
+    font-family: monospace;
+}
+
+table{
+    border: 1px solid cornflowerblue;
+    border-collapse: collapse;
+}
+
+th{
+    border: 2px solid yellow;
+}
+
+td{
+    border: 1px solid red;
+}
+
+#special-paragraph{
+    color: purple;
+}
+
+.normargin{
+    margin: 0;
+}
+
+:root{
+    background: rgb(2,0,36);
+background: linear-gradient(313deg, rgba(2,0,36,1) 2%, rgba(96,121,9,1) 21%, rgba(136,146,69,1) 43%, rgba(190,34,200,1) 72%, rgba(13,194,231,0.7259278711484594) 97%);
+}
+
+a {
+    color: greenyellow;
+}
+
+a:hover {
+    color: red;
+}

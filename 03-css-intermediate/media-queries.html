@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            #sm, #md, #lg, #xl {
+                display: none;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 601px) and (max-width: 768px) {
+            #xs, #md, #lg, #xl {
+                display: none;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 769px) and (max-width: 992px) {
+            #xs, #sm, #lg, #xl {
+                display: none;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 993px) and (max-width: 1200px) {
+            #xs, #sm, #md, #xl {
+                display: none;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1201px) {
+            #xs, #sm, #md, #lg {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="xs">
+        Extra small
+    </div>
+    
+    <div id="sm">
+        Small
+    </div>
+
+    <div id="md">
+        Medium
+    </div>
+
+    <div id="lg">
+        Large
+    </div>
+
+    <div id="xl">
+        Extra large
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+
+        #root{
+            background: crimson;
+
+            border-color: lightgreen;
+            border-width: 2px;
+            border-style: dashed;
+
+            border:2px dashed cornflowerblue
+        }
+
+        #root::before{
+            content: 'Hello world';
+        }
+
+        #root::after{
+            content: 'After';
+        }
+
+        div{
+            background: cornsilk;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <p>something</p>
+        <p>something <span>else</span></p>
+    </div>
+    
+</body>
+</html>
