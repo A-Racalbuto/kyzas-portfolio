@@ -11,5 +11,5 @@
  * - remainder
  * - ...
  * 
- * You can use an if-else cascade, or the ternary operator (not suggested)
+ * You can use an if-else cascade, or the ternary operator (not recommended)
  */
