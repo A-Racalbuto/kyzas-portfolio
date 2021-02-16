@@ -30,7 +30,7 @@ let grade1 = +prompt('Please enter your grade');
 let sumOfGrades1 = 0;
 
 while (grade1 > 0 && grade1 < 7) {
-    if (grade1) {
+    if (grade1) {                       // if-Bedingung kann man weglassen, weil while schon darauf testet
         sumOfGrades1 += grade1;
         counter1++;
     }
