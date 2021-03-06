@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handler</title>
+</head>
+<body>
+    <button>Click me!</button>
+
+    <script>
+        (function() {
+            outer();
+
+            function outer() {                
+                console.log('before');
+
+                debugger; // stoppt den Code hier um zu debuggen
+
+                inner();
+                console.log('after')
+            }
+            function inner() {
+                console.log('inner')
+            }
+
+            function testEventHandlers() {
+                const button = document.querySelector('button');
+
+                
+                const handleClick = function () {
+                    alert('Clicked!')
+                };
+                
+                button.onclick = handleClick;
+
+                button.onclick = function () {
+                    alert('Clicked!')
+                };
+
+                button.addEventListener('mouseover', handleHover);
+                
+                function handleHover() {
+                    console.log('Hovered!');
+                }
+            }
+        })();
+    </script>
+</body>
+</html>

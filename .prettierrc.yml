@@ -1,0 +1,5 @@
+# Replace double quotes with single quotes
+singleQuote: true
+
+# Keeps all semicolons (when "false", semicolons are removed)
+semi: true

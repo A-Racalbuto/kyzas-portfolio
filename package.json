@@ -1,0 +1,23 @@
+{
+  "name": "kyzas-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio project created during the Inglorious Academy 2020-2021.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyza219/kyzas-portfolio.git"
+  },
+  "author": "Angelo Racalbuto <a.racalbuto@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyza219/kyzas-portfolio/issues"
+  },
+  "homepage": "https://github.com/kyza219/kyzas-portfolio#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.20.0"
+  }
+}
